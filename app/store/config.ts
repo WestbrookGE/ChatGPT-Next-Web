@@ -225,9 +225,9 @@ export const useAppConfig = createPersistStore(
         state.hideBuiltinMasks = false;
       }
 
-      if (version < 3.5) {
-        state.customModels = "claude,claude-100k";
-      }
+      // if (version < 3.5) {
+      //   state.customModels = "claude,claude-100k";
+      // }
 
       if (version < 3.6) {
         state.modelConfig.enableInjectSystemPrompts = true;
